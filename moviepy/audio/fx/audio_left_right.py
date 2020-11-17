@@ -1,9 +1,10 @@
 import numpy as np
 
+
 def audio_left_right(audioclip, left=1, right=1, merge=False):
     """
-    NOT YET FINISHED 
-    
+    NOT YET FINISHED
+
     For a stereo audioclip, this function enables to change the volume
     of the left and right channel separately (with the factors `left`
     and `right`)
@@ -12,4 +13,3 @@ def audio_left_right(audioclip, left=1, right=1, merge=False):
     """
     funleft = (lambda t: left) if np.isscalar(left) else left
     funright = (lambda t: right) if np.isscalar(right) else right
-    
